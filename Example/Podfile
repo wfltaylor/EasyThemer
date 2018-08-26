@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'EasyThemer_Example' do
+  pod 'EasyThemer', :path => '../'
+
+  target 'EasyThemer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
