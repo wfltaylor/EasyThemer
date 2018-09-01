@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import EasyThemer
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -19,6 +19,16 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    @IBAction func lightTheme(_ sender: Any) {
+        ThemeEngine.standard.setTheme(theme: LightTheme())
+    }
+    
+    @IBAction func darkTheme(_ sender: Any) {
+        ThemeEngine.standard.setTheme(theme: DarkTheme())
+    }
+    
+    @IBAction func crazyTheme(_ sender: Any) {
+    }
+    
 }
 

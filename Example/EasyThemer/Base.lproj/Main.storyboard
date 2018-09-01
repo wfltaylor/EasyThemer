@@ -1,30 +1,154 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="065-Nc-JQj">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Tab Bar Controller-->
+        <scene sceneID="j0h-To-wHH">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="EasyThemer_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <tabBarController id="065-Nc-JQj" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NaF-X0-lTf" customClass="ThemeableTabBar" customModule="EasyThemer">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Mha-0O-IbY" kind="relationship" relationship="viewControllers" id="ibT-oR-jEA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PKs-eh-W80" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-612" y="1134"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uBb-Uh-gjc">
+            <objects>
+                <navigationController id="Mha-0O-IbY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="more" id="fpM-O8-8d6"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dgn-3l-9gF" customClass="ThemeableNavigationBar" customModule="EasyThemer">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hJS-8H-5ZS" kind="relationship" relationship="rootViewController" id="Tuh-0M-oxr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L00-TG-Aez" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="364" y="1034"/>
+        </scene>
+        <!--EasyThemer-->
+        <scene sceneID="THE-b1-K1H">
+            <objects>
+                <viewController id="hJS-8H-5ZS" customClass="ViewController" customModule="EasyThemer_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yZi-WD-FZa"/>
+                        <viewControllerLayoutGuide type="bottom" id="NFf-jd-QLM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="C6P-D6-5Km" customClass="ThemeableView" customModule="EasyThemer">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cb2-br-uvl">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uDP-ze-z3e">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="266"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a1O-Le-6dr" customClass="ThemeableButton" customModule="EasyThemer">
+                                                <rect key="frame" x="8" y="22" width="100" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="cSt-Jv-LJi"/>
+                                                    <constraint firstAttribute="height" constant="30" id="hPt-ZA-hLJ"/>
+                                                </constraints>
+                                                <state key="normal" title="Light Theme"/>
+                                                <connections>
+                                                    <action selector="lightTheme:" destination="hJS-8H-5ZS" eventType="touchUpInside" id="3EK-z4-hVD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvH-23-lem" customClass="ThemeableButton" customModule="EasyThemer">
+                                                <rect key="frame" x="8" y="60" width="84" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="pls-GT-CbT"/>
+                                                </constraints>
+                                                <state key="normal" title="Dark Theme"/>
+                                                <connections>
+                                                    <action selector="darkTheme:" destination="hJS-8H-5ZS" eventType="touchUpInside" id="8ss-kw-M7V"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9h-zB-sls" customClass="ThemeableButton" customModule="EasyThemer">
+                                                <rect key="frame" x="8" y="98" width="92" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="ZrR-yd-jx6"/>
+                                                </constraints>
+                                                <state key="normal" title="Crazy Theme"/>
+                                                <connections>
+                                                    <action selector="crazyTheme:" destination="hJS-8H-5ZS" eventType="touchUpInside" id="zHg-JF-6pR"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Eq-IS-NRT" customClass="ThemeableLabel" customModule="EasyThemer">
+                                                <rect key="frame" x="134" y="26" width="233" height="122"/>
+                                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et pharetra pharetra massa massa </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IzF-1f-VOy" customClass="ThemeableView" customModule="EasyThemer">
+                                                <rect key="frame" x="8" y="147" width="121" height="58"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="121" id="JGE-hq-TOL"/>
+                                                    <constraint firstAttribute="height" constant="58" id="n2Q-mI-BQg"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="4Eq-IS-NRT" firstAttribute="leading" secondItem="a1O-Le-6dr" secondAttribute="trailing" constant="26" id="AE8-nM-661"/>
+                                            <constraint firstAttribute="height" constant="266" id="Cyf-9x-Yo5"/>
+                                            <constraint firstItem="w9h-zB-sls" firstAttribute="leading" secondItem="uDP-ze-z3e" secondAttribute="leading" constant="8" id="Re6-nt-UM2"/>
+                                            <constraint firstAttribute="trailing" secondItem="4Eq-IS-NRT" secondAttribute="trailing" constant="8" id="XAm-vZ-TMp"/>
+                                            <constraint firstItem="w9h-zB-sls" firstAttribute="top" secondItem="pvH-23-lem" secondAttribute="bottom" constant="8" id="YF9-6k-zaW"/>
+                                            <constraint firstItem="pvH-23-lem" firstAttribute="leading" secondItem="uDP-ze-z3e" secondAttribute="leading" constant="8" id="awy-vC-6Gs"/>
+                                            <constraint firstItem="4Eq-IS-NRT" firstAttribute="top" secondItem="uDP-ze-z3e" secondAttribute="top" constant="26" id="doD-iK-IC8"/>
+                                            <constraint firstItem="a1O-Le-6dr" firstAttribute="top" secondItem="uDP-ze-z3e" secondAttribute="top" constant="22" id="efl-mI-62P"/>
+                                            <constraint firstItem="pvH-23-lem" firstAttribute="top" secondItem="a1O-Le-6dr" secondAttribute="bottom" constant="8" id="kTY-9f-Bia"/>
+                                            <constraint firstItem="IzF-1f-VOy" firstAttribute="top" secondItem="w9h-zB-sls" secondAttribute="bottom" constant="19" id="miG-fm-akw"/>
+                                            <constraint firstItem="a1O-Le-6dr" firstAttribute="leading" secondItem="uDP-ze-z3e" secondAttribute="leading" constant="8" id="vMW-5f-xng"/>
+                                            <constraint firstItem="IzF-1f-VOy" firstAttribute="leading" secondItem="uDP-ze-z3e" secondAttribute="leading" constant="8" id="wTK-JX-LQz"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="uDP-ze-z3e" firstAttribute="leading" secondItem="cb2-br-uvl" secondAttribute="leading" id="Dod-Ig-MBU"/>
+                                    <constraint firstAttribute="bottom" secondItem="uDP-ze-z3e" secondAttribute="bottom" id="EYY-N9-gQr"/>
+                                    <constraint firstItem="uDP-ze-z3e" firstAttribute="centerX" secondItem="cb2-br-uvl" secondAttribute="centerX" id="EwJ-Un-m2m"/>
+                                    <constraint firstItem="uDP-ze-z3e" firstAttribute="top" secondItem="cb2-br-uvl" secondAttribute="top" id="fHx-Ld-CAZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="uDP-ze-z3e" secondAttribute="trailing" id="wmR-Iy-gUr"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NFf-jd-QLM" firstAttribute="top" secondItem="cb2-br-uvl" secondAttribute="bottom" id="6vZ-Gv-dfM"/>
+                            <constraint firstItem="NFf-jd-QLM" firstAttribute="top" secondItem="cb2-br-uvl" secondAttribute="bottom" id="Slj-Lu-O3F"/>
+                            <constraint firstAttribute="trailing" secondItem="cb2-br-uvl" secondAttribute="trailing" id="Uzn-K0-TF5"/>
+                            <constraint firstItem="cb2-br-uvl" firstAttribute="top" secondItem="yZi-WD-FZa" secondAttribute="bottom" id="djh-sV-ctE"/>
+                            <constraint firstItem="cb2-br-uvl" firstAttribute="leading" secondItem="C6P-D6-5Km" secondAttribute="leading" id="h18-jD-tao"/>
+                            <constraint firstItem="cb2-br-uvl" firstAttribute="top" secondItem="yZi-WD-FZa" secondAttribute="bottom" id="niI-pG-V9E"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="EasyThemer" id="HOb-q2-ZNK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IxG-u4-J4l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1296.8" y="1051.1244377811095"/>
         </scene>
     </scenes>
 </document>
