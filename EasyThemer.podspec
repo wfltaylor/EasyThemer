@@ -30,6 +30,7 @@ EasyThemer is an easy way to add themes to your iOS app. It is written in Swift.
 
   s.source_files = 'EasyThemer/Classes/**/*'
   
+  s.swift_version = '4.0'
   # s.resource_bundles = {
   #   'EasyThemer' => ['EasyThemer/Assets/*.png']
   # }
