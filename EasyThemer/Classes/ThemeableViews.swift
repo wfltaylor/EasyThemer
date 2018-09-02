@@ -4,8 +4,26 @@
 //
 //  Created by William Taylor on 25/8/18.
 //
+class MyViewController: UIViewController {
+    var tableView = UITableView(frame: CGRect.zero)
+}
+extension MyViewController: ThemeEngineDelegate {
 
-
+    func themeChanged(theme: Theme) {
+        setTheme(theme: theme)
+    }
+    func themeReady(theme: Theme) {
+        setTheme(theme: theme)
+    }
+    
+    func setTheme(theme: Theme) {
+        tableView.backgroundColor = theme.backgroundColor
+    }
+    func setupThemes() {
+        ThemeEngine.standard.clients.append(self)
+    }
+    
+}
 class ThemeableView: UIView, ThemeEngineDelegate {
     
     private let arrayIndex: Int
@@ -17,7 +35,7 @@ class ThemeableView: UIView, ThemeEngineDelegate {
     private func getTheme() -> Theme {
         return ThemeEngine.standard.currentTheme!
     }
-    internal func themeChanged() {
+    internal func themeChanged(theme: Theme) {
         set(theme: getTheme())
     }
     public init() {
@@ -47,7 +65,7 @@ class ThemeableView: UIView, ThemeEngineDelegate {
             set(theme: getTheme())
         }
     }
-    func themeReady() {
+    func themeReady(theme: Theme) {
         set(theme: getTheme())
     }
     deinit {
@@ -66,7 +84,7 @@ class ThemeableButton: UIButton, ThemeEngineDelegate {
     private func getTheme() -> Theme {
         return ThemeEngine.standard.currentTheme!
     }
-    internal func themeChanged() {
+    internal func themeChanged(theme: Theme) {
         set(theme: getTheme())
     }
     public init() {
@@ -96,7 +114,7 @@ class ThemeableButton: UIButton, ThemeEngineDelegate {
             set(theme: getTheme())
         }
     }
-    func themeReady() {
+    func themeReady(theme: Theme) {
         set(theme: getTheme())
     }
     deinit {
@@ -130,7 +148,7 @@ class ThemeableNavigationBar: UINavigationBar, ThemeEngineDelegate {
     private func getTheme() -> Theme {
         return ThemeEngine.standard.currentTheme!
     }
-    internal func themeChanged() {
+    internal func themeChanged(theme: Theme) {
         set(theme: getTheme())
     }
     public init() {
@@ -160,7 +178,7 @@ class ThemeableNavigationBar: UINavigationBar, ThemeEngineDelegate {
             set(theme: getTheme())
         }
     }
-    func themeReady() {
+    func themeReady(theme: Theme) {
         set(theme: getTheme())
     }
     deinit {
@@ -180,7 +198,7 @@ class ThemeableTabBar: UITabBar, ThemeEngineDelegate {
     private func getTheme() -> Theme {
         return ThemeEngine.standard.currentTheme!
     }
-    internal func themeChanged() {
+    internal func themeChanged(theme: Theme) {
         set(theme: getTheme())
     }
     public init() {
@@ -210,7 +228,7 @@ class ThemeableTabBar: UITabBar, ThemeEngineDelegate {
             set(theme: getTheme())
         }
     }
-    func themeReady() {
+    func themeReady(theme: Theme) {
         set(theme: getTheme())
     }
     deinit {
@@ -230,7 +248,7 @@ class ThemeableLabel: UILabel, ThemeEngineDelegate {
     private func getTheme() -> Theme {
         return ThemeEngine.standard.currentTheme!
     }
-    internal func themeChanged() {
+    internal func themeChanged(theme: Theme) {
         set(theme: getTheme())
     }
     public init() {
@@ -260,7 +278,7 @@ class ThemeableLabel: UILabel, ThemeEngineDelegate {
             set(theme: getTheme())
         }
     }
-    func themeReady() {
+    func themeReady(theme: Theme) {
         set(theme: getTheme())
     }
     deinit {

@@ -15,7 +15,7 @@ public class ThemeEngine {
         didSet {
             isReady = true
             for client in clients {
-                client.themeReady?()
+                client.themeReady(theme: defaultTheme)
             }
         }
     }
@@ -36,7 +36,7 @@ public class ThemeEngine {
         }
         currentTheme = theme
         for client in clients {
-            client.themeChanged()
+            client.themeChanged(theme: currentTheme!)
         }
     }
     public func configure(theme: Theme) {
@@ -48,8 +48,8 @@ public class ThemeEngine {
     
 }
 
-@objc public protocol ThemeEngineDelegate {
-    func themeChanged()
-    @objc optional func themeReady()
+public protocol ThemeEngineDelegate {
+    func themeChanged(theme: Theme)
+    func themeReady(theme: Theme)
 }
 
