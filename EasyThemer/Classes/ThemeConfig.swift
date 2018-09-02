@@ -17,11 +17,14 @@ public protocol Theme {
     var titleFont: UIFont? { get }
     //Other
     var barStyle: UIBarStyle? { get }
+    var barTintColor: UIColor? { get }
     var prefersLargeTitles: Bool? { get }
 }
 
 open class ThemeDecleration: Theme {
     
+    public var barTintColor: UIColor?
+
     public var backgroundColor: UIColor?
     
     public var textColor: UIColor?

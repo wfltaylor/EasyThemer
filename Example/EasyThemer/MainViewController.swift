@@ -21,6 +21,7 @@ class ViewController: UIViewController {
     }
     @IBAction func lightTheme(_ sender: Any) {
         ThemeEngine.standard.setTheme(theme: LightTheme())
+        
     }
     
     @IBAction func darkTheme(_ sender: Any) {
@@ -28,6 +29,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func crazyTheme(_ sender: Any) {
+        ThemeEngine.standard.setTheme(theme: JSONTheme(named: "CrazyTheme")!/*CrazyTheme()*/)
     }
     
 }

@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		9C5C6803213A99D000A30A2B /* SampleThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5C6802213A99D000A30A2B /* SampleThemes.swift */; };
+		9C5C6809213B77BA00A30A2B /* CrazyTheme.json in Resources */ = {isa = PBXBuildFile; fileRef = 9C5C6808213B77BA00A30A2B /* CrazyTheme.json */; };
 		B5B38F541AEAAEB029D77B6C /* Pods_EasyThemer_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A1D65D90B6DEC7815CA98E /* Pods_EasyThemer_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,7 @@
 		725510AD5BF962242E67938D /* EasyThemer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = EasyThemer.podspec; path = ../EasyThemer.podspec; sourceTree = "<group>"; };
 		725832D9CAB51FBCFD901AEA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9C5C6802213A99D000A30A2B /* SampleThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleThemes.swift; sourceTree = "<group>"; };
+		9C5C6808213B77BA00A30A2B /* CrazyTheme.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CrazyTheme.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* MainViewController.swift */,
 				9C5C6802213A99D000A30A2B /* SampleThemes.swift */,
+				9C5C6808213B77BA00A30A2B /* CrazyTheme.json */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -253,6 +256,7 @@
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				9C5C6809213B77BA00A30A2B /* CrazyTheme.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

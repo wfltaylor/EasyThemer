@@ -112,7 +112,15 @@ class ThemeableNavigationBar: UINavigationBar, ThemeEngineDelegate {
     public func set(theme: Theme) {
         self.tintColor = theme.tintColor
         self.barStyle = theme.barStyle ?? self.barStyle
-        self.titleTextAttributes = [NSAttributedStringKey.font: (theme.titleFont ?? UIFont.systemFont(ofSize: 24)) as Any]
+        if theme.titleFont != nil {
+            self.titleTextAttributes = [NSAttributedStringKey.font: theme.titleFont!]
+            if #available(iOS 11.0, *) {
+                self.largeTitleTextAttributes = [NSAttributedStringKey.font: theme.titleFont!]
+            } else {
+                print("Failed To Set Large Title Attribute")
+            }
+        }
+        self.barTintColor = theme.barTintColor
         if #available(iOS 11.0, *) {
             self.prefersLargeTitles = true
         } else {
@@ -167,6 +175,7 @@ class ThemeableTabBar: UITabBar, ThemeEngineDelegate {
     public func set(theme: Theme) {
         self.tintColor = theme.tintColor
         self.barStyle = theme.barStyle ?? self.barStyle
+        self.barTintColor = theme.barTintColor
     }
     private func getTheme() -> Theme {
         return ThemeEngine.standard.currentTheme!

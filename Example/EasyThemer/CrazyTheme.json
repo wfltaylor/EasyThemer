@@ -1,0 +1,36 @@
+{
+    "backgroundColorCode" : {
+        "red" : 0,
+        "alpha" : 1,
+        "blue" : 0,
+        "green" : 1
+    },
+    "barStyle" : "default",
+    "primaryFontCode" : {
+        "name" : "Chalkboard SE",
+        "pointSize" : 12
+    },
+    "barTintColorCode" : {
+        "red" : 1,
+        "alpha" : 1,
+        "blue" : 0,
+        "green" : 0.6
+    },
+    "titleFontCode" : {
+        "name" : "Chalkboard SE",
+        "pointSize" : 54
+    },
+    "textColorCode" : {
+        "red" : 0,
+        "alpha" : 1,
+        "blue" : 0,
+        "green" : 0
+    },
+    "prefersLargeTitles" : true,
+    "tintColorCode" : {
+        "red" : 1,
+        "alpha" : 1,
+        "blue" : 0,
+        "green" : 0
+    }
+}

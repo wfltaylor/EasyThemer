@@ -11,19 +11,20 @@ import EasyThemer
 
 class LightTheme: ThemeDecleration {
     override func setupProperties() {
-        titleFont = UIFont(name: "Gill Sans", size: 20)
+        titleFont = UIFont(name: "Gill Sans", size: 44)
         primaryFont = UIFont(name: "Gill Sans", size: 12)
         backgroundColor = UIColor.white
         prefersLargeTitles = true
+        barStyle = UIBarStyle.default
     }
 }
 class DarkTheme: ThemeDecleration {
     override func setupProperties() {
+        titleFont = UIFont.systemFont(ofSize: 44)
+        primaryFont = UIFont.systemFont(ofSize: UIFont.systemFontSize)
         backgroundColor = UIColor.black
         textColor = UIColor.white
         barStyle = UIBarStyle.black
-        //titleFont = UIFont(name: "Gill Sans", size: 20)
-        //primaryFont = UIFont(name: "Gill Sans Light", size: 12)
         prefersLargeTitles = true
     }
 }
