@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 /*public class DebugGenerator {
     public static func generateJSON() {
         let themeGen = JSONTheme(backgroundColorCode: UIColorCodable(color: UIColor.white), textColorCode: UIColorCodable(color: UIColor.black), primaryColorCode: UIColorCodable(color: UIColor.red), tintColorCode: UIColorCodable(color: UIColor.red), barTintColorCode: UIColorCodable(color: UIColor.gray), primaryFontCode: UIFontCodable(font: UIFont.systemFont(ofSize: 12)), titleFontCode: UIFontCodable(font: UIFont(name: "Gill Sans", size: 54)!), barStyle: UIBarStyle.black, prefersLargeTitles: true)
