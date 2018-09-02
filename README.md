@@ -1,6 +1,5 @@
-# EasyThemer
+![EasyThemer](https://raw.githubusercontent.com/wfltaylor/EasyThemer/master/easythemer.png)
 
-[![CI Status](https://img.shields.io/travis/wfltaylor@gmail.com/EasyThemer.svg?style=flat)](https://travis-ci.org/wfltaylor@gmail.com/EasyThemer)
 [![Version](https://img.shields.io/cocoapods/v/EasyThemer.svg?style=flat)](https://cocoapods.org/pods/EasyThemer)
 [![License](https://img.shields.io/cocoapods/l/EasyThemer.svg?style=flat)](https://cocoapods.org/pods/EasyThemer)
 [![Platform](https://img.shields.io/cocoapods/p/EasyThemer.svg?style=flat)](https://cocoapods.org/pods/EasyThemer)
@@ -22,7 +21,7 @@ pod 'EasyThemer'
 
 ## Author
 
-wfltaylor@gmail.com, wfltaylor@gmail.com
+William Taylor
 
 ## License
 
