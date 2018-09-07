@@ -22,7 +22,13 @@ public class ThemeEngine {
     
     public var isReady = false
     
-    public var clients = [ThemeEngineDelegate]()
+    public var clients = [ThemeEngineDelegate]() {
+        didSet {
+            if isReady {
+                clients.last?.themeReady(theme: currentTheme!)
+            }
+        }
+    }
     
     public init(defaultTheme: Theme?) {
         self.defaultTheme = defaultTheme
