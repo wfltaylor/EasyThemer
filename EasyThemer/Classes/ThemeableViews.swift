@@ -59,7 +59,7 @@ open class ThemeableView: UIView, ThemeEngineDelegate {
         super.init(coder: aDecoder)
         ThemeEngine.standard.clients.append(self)
     }
-    override public func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         if ThemeEngine.standard.isReady {
             set(theme: getTheme())
@@ -108,7 +108,7 @@ open class ThemeableButton: UIButton, ThemeEngineDelegate {
         super.init(coder: aDecoder)
         ThemeEngine.standard.clients.append(self)
     }
-    override public func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         if ThemeEngine.standard.isReady {
             set(theme: getTheme())
@@ -172,7 +172,7 @@ open class ThemeableNavigationBar: UINavigationBar, ThemeEngineDelegate {
         super.init(coder: aDecoder)
         ThemeEngine.standard.clients.append(self)
     }
-    override public func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         if ThemeEngine.standard.isReady {
             set(theme: getTheme())
@@ -222,7 +222,7 @@ open class ThemeableTabBar: UITabBar, ThemeEngineDelegate {
         super.init(coder: aDecoder)
         ThemeEngine.standard.clients.append(self)
     }
-    override public func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         if ThemeEngine.standard.isReady {
             set(theme: getTheme())
@@ -272,7 +272,7 @@ open class ThemeableLabel: UILabel, ThemeEngineDelegate {
         super.init(coder: aDecoder)
         ThemeEngine.standard.clients.append(self)
     }
-    override public func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         if ThemeEngine.standard.isReady {
             set(theme: getTheme())
