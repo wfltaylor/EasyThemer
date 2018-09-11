@@ -24,7 +24,7 @@ extension MyViewController: ThemeEngineDelegate {
     }
     
 }
-class ThemeableView: UIView, ThemeEngineDelegate {
+public class ThemeableView: UIView, ThemeEngineDelegate {
     
     private let arrayIndex: Int
     
@@ -35,7 +35,7 @@ class ThemeableView: UIView, ThemeEngineDelegate {
     private func getTheme() -> Theme {
         return ThemeEngine.standard.currentTheme!
     }
-    internal func themeChanged(theme: Theme) {
+    public func themeChanged(theme: Theme) {
         set(theme: getTheme())
     }
     public init() {
@@ -54,25 +54,25 @@ class ThemeableView: UIView, ThemeEngineDelegate {
             set(theme: getTheme())
         }
     }
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         arrayIndex = ThemeEngine.standard.clients.count
         super.init(coder: aDecoder)
         ThemeEngine.standard.clients.append(self)
     }
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         if ThemeEngine.standard.isReady {
             set(theme: getTheme())
         }
     }
-    func themeReady(theme: Theme) {
+    public func themeReady(theme: Theme) {
         set(theme: getTheme())
     }
     deinit {
         ThemeEngine.standard.clients.remove(at: arrayIndex)
     }
 }
-class ThemeableButton: UIButton, ThemeEngineDelegate {
+public class ThemeableButton: UIButton, ThemeEngineDelegate {
     
     private let arrayIndex: Int
     
@@ -84,7 +84,7 @@ class ThemeableButton: UIButton, ThemeEngineDelegate {
     private func getTheme() -> Theme {
         return ThemeEngine.standard.currentTheme!
     }
-    internal func themeChanged(theme: Theme) {
+    public func themeChanged(theme: Theme) {
         set(theme: getTheme())
     }
     public init() {
@@ -103,18 +103,18 @@ class ThemeableButton: UIButton, ThemeEngineDelegate {
             set(theme: getTheme())
         }
     }
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         arrayIndex = ThemeEngine.standard.clients.count
         super.init(coder: aDecoder)
         ThemeEngine.standard.clients.append(self)
     }
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         if ThemeEngine.standard.isReady {
             set(theme: getTheme())
         }
     }
-    func themeReady(theme: Theme) {
+    public func themeReady(theme: Theme) {
         set(theme: getTheme())
     }
     deinit {
@@ -123,7 +123,7 @@ class ThemeableButton: UIButton, ThemeEngineDelegate {
     
 }
 
-class ThemeableNavigationBar: UINavigationBar, ThemeEngineDelegate {
+public class ThemeableNavigationBar: UINavigationBar, ThemeEngineDelegate {
     
     private let arrayIndex: Int
     
@@ -148,7 +148,7 @@ class ThemeableNavigationBar: UINavigationBar, ThemeEngineDelegate {
     private func getTheme() -> Theme {
         return ThemeEngine.standard.currentTheme!
     }
-    internal func themeChanged(theme: Theme) {
+    public func themeChanged(theme: Theme) {
         set(theme: getTheme())
     }
     public init() {
@@ -167,18 +167,18 @@ class ThemeableNavigationBar: UINavigationBar, ThemeEngineDelegate {
             set(theme: getTheme())
         }
     }
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         arrayIndex = ThemeEngine.standard.clients.count
         super.init(coder: aDecoder)
         ThemeEngine.standard.clients.append(self)
     }
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         if ThemeEngine.standard.isReady {
             set(theme: getTheme())
         }
     }
-    func themeReady(theme: Theme) {
+    public func themeReady(theme: Theme) {
         set(theme: getTheme())
     }
     deinit {
@@ -186,7 +186,7 @@ class ThemeableNavigationBar: UINavigationBar, ThemeEngineDelegate {
     }
     
 }
-class ThemeableTabBar: UITabBar, ThemeEngineDelegate {
+public class ThemeableTabBar: UITabBar, ThemeEngineDelegate {
     
     private let arrayIndex: Int
     
@@ -198,7 +198,7 @@ class ThemeableTabBar: UITabBar, ThemeEngineDelegate {
     private func getTheme() -> Theme {
         return ThemeEngine.standard.currentTheme!
     }
-    internal func themeChanged(theme: Theme) {
+    public func themeChanged(theme: Theme) {
         set(theme: getTheme())
     }
     public init() {
@@ -217,18 +217,18 @@ class ThemeableTabBar: UITabBar, ThemeEngineDelegate {
             set(theme: getTheme())
         }
     }
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         arrayIndex = ThemeEngine.standard.clients.count
         super.init(coder: aDecoder)
         ThemeEngine.standard.clients.append(self)
     }
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         if ThemeEngine.standard.isReady {
             set(theme: getTheme())
         }
     }
-    func themeReady(theme: Theme) {
+    public func themeReady(theme: Theme) {
         set(theme: getTheme())
     }
     deinit {
@@ -236,7 +236,7 @@ class ThemeableTabBar: UITabBar, ThemeEngineDelegate {
     }
     
 }
-class ThemeableLabel: UILabel, ThemeEngineDelegate {
+public class ThemeableLabel: UILabel, ThemeEngineDelegate {
     
     private let arrayIndex: Int
     
@@ -248,7 +248,7 @@ class ThemeableLabel: UILabel, ThemeEngineDelegate {
     private func getTheme() -> Theme {
         return ThemeEngine.standard.currentTheme!
     }
-    internal func themeChanged(theme: Theme) {
+    public func themeChanged(theme: Theme) {
         set(theme: getTheme())
     }
     public init() {
@@ -267,18 +267,18 @@ class ThemeableLabel: UILabel, ThemeEngineDelegate {
             set(theme: getTheme())
         }
     }
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         arrayIndex = ThemeEngine.standard.clients.count
         super.init(coder: aDecoder)
         ThemeEngine.standard.clients.append(self)
     }
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         if ThemeEngine.standard.isReady {
             set(theme: getTheme())
         }
     }
-    func themeReady(theme: Theme) {
+    public func themeReady(theme: Theme) {
         set(theme: getTheme())
     }
     deinit {
