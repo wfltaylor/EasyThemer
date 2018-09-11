@@ -24,7 +24,7 @@ extension MyViewController: ThemeEngineDelegate {
     }
     
 }
-public class ThemeableView: UIView, ThemeEngineDelegate {
+open class ThemeableView: UIView, ThemeEngineDelegate {
     
     private let arrayIndex: Int
     
@@ -72,7 +72,7 @@ public class ThemeableView: UIView, ThemeEngineDelegate {
         ThemeEngine.standard.clients.remove(at: arrayIndex)
     }
 }
-public class ThemeableButton: UIButton, ThemeEngineDelegate {
+open class ThemeableButton: UIButton, ThemeEngineDelegate {
     
     private let arrayIndex: Int
     
@@ -123,7 +123,7 @@ public class ThemeableButton: UIButton, ThemeEngineDelegate {
     
 }
 
-public class ThemeableNavigationBar: UINavigationBar, ThemeEngineDelegate {
+open class ThemeableNavigationBar: UINavigationBar, ThemeEngineDelegate {
     
     private let arrayIndex: Int
     
@@ -186,7 +186,7 @@ public class ThemeableNavigationBar: UINavigationBar, ThemeEngineDelegate {
     }
     
 }
-public class ThemeableTabBar: UITabBar, ThemeEngineDelegate {
+open class ThemeableTabBar: UITabBar, ThemeEngineDelegate {
     
     private let arrayIndex: Int
     
@@ -236,7 +236,7 @@ public class ThemeableTabBar: UITabBar, ThemeEngineDelegate {
     }
     
 }
-public class ThemeableLabel: UILabel, ThemeEngineDelegate {
+open class ThemeableLabel: UILabel, ThemeEngineDelegate {
     
     private let arrayIndex: Int
     
