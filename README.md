@@ -9,7 +9,7 @@
 - [x] Prebuilt UIKit controls with automatic theming
 - [x] Themes can be JSON or a struct
 - [x] Quick and easy to implement
-- [x] Flexable and straightforward to extend
+- [x] Flexible and straightforward to extend
 
 ## Example
 
