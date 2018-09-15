@@ -114,9 +114,9 @@ open class ThemeableNavigationBar: UINavigationBar, ThemeEngineDelegate {
         self.tintColor = theme.tintColor
         self.barStyle = theme.barStyle ?? self.barStyle
         if theme.titleFont != nil {
-            self.titleTextAttributes = [NSAttributedStringKey.font: theme.titleFont!]
+            self.titleTextAttributes = [NSAttributedString.Key.font: theme.titleFont!]
             if #available(iOS 11.0, *) {
-                self.largeTitleTextAttributes = [NSAttributedStringKey.font: theme.titleFont!]
+                self.largeTitleTextAttributes = [NSAttributedString.Key.font: theme.titleFont!]
             } else {
                 print("Failed To Set Large Title Attribute")
             }
