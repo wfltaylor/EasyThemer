@@ -18,6 +18,10 @@ import Foundation
         print(output!)
     }
 }*/
+
+/**
+ A struct that allows themes to be desterilised from JSON
+ */
 public struct JSONTheme: Theme, Codable {
     
     public var primaryFont: UIFont? {
@@ -80,6 +84,9 @@ public struct JSONTheme: Theme, Codable {
     
     public let prefersLargeTitles: Bool?
     
+    /**
+    The coding keys to comply with Codeable
+     */
     private enum CodingKeys: String, CodingKey {
         case backgroundColorCode
         case textColorCode
@@ -91,6 +98,13 @@ public struct JSONTheme: Theme, Codable {
         case barTintColorCode
         case prefersLargeTitles
     }
+    
+    /**
+     Creates a theme with a JSON string
+     
+     - Parameter json: The raw JSON string
+     
+     */
     public init?(withJson json: String) {
         //Parsing JSON
         let jsonDecoder = JSONDecoder()
@@ -101,6 +115,13 @@ public struct JSONTheme: Theme, Codable {
             return nil
         }
     }
+    
+    /**
+     Creates a theme with a JSON file in the documents directory
+     
+     - Parameter file: The file name with extension
+     
+     */
     public init?(file: String) {
         //Reading File
         let fileLocation = file
@@ -121,6 +142,13 @@ public struct JSONTheme: Theme, Codable {
             return nil
         }
     }
+    
+    /**
+     Creates a theme with a JSON file in the application bundle
+     
+     - Parameter named: The file name with an extension of type .json without the extension
+     
+     */
     public init?(named: String) {
         //Reading File
         let fileLocation = named

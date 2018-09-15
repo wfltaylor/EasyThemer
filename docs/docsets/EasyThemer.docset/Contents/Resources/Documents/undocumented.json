@@ -1,0 +1,341 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/JSONTheme.swift",
+      "line": 27,
+      "symbol": "JSONTheme.primaryFont",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/JSONTheme.swift",
+      "line": 33,
+      "symbol": "JSONTheme.titleFont",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/JSONTheme.swift",
+      "line": 39,
+      "symbol": "JSONTheme.backgroundColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/JSONTheme.swift",
+      "line": 45,
+      "symbol": "JSONTheme.textColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/JSONTheme.swift",
+      "line": 51,
+      "symbol": "JSONTheme.primaryColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/JSONTheme.swift",
+      "line": 57,
+      "symbol": "JSONTheme.tintColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/JSONTheme.swift",
+      "line": 63,
+      "symbol": "JSONTheme.barTintColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/JSONTheme.swift",
+      "line": 83,
+      "symbol": "JSONTheme.barStyle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/JSONTheme.swift",
+      "line": 85,
+      "symbol": "JSONTheme.prefersLargeTitles",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeConfig.swift",
+      "line": 16,
+      "symbol": "Theme.backgroundColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeConfig.swift",
+      "line": 17,
+      "symbol": "Theme.textColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeConfig.swift",
+      "line": 18,
+      "symbol": "Theme.primaryColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeConfig.swift",
+      "line": 19,
+      "symbol": "Theme.tintColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeConfig.swift",
+      "line": 21,
+      "symbol": "Theme.primaryFont",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeConfig.swift",
+      "line": 22,
+      "symbol": "Theme.titleFont",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeConfig.swift",
+      "line": 24,
+      "symbol": "Theme.barStyle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeConfig.swift",
+      "line": 25,
+      "symbol": "Theme.barTintColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeConfig.swift",
+      "line": 26,
+      "symbol": "Theme.prefersLargeTitles",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeConfig.swift",
+      "line": 34,
+      "symbol": "ThemeDeclaration.barTintColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeConfig.swift",
+      "line": 36,
+      "symbol": "ThemeDeclaration.backgroundColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeConfig.swift",
+      "line": 38,
+      "symbol": "ThemeDeclaration.textColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeConfig.swift",
+      "line": 40,
+      "symbol": "ThemeDeclaration.primaryColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeConfig.swift",
+      "line": 42,
+      "symbol": "ThemeDeclaration.tintColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeConfig.swift",
+      "line": 44,
+      "symbol": "ThemeDeclaration.primaryFont",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeConfig.swift",
+      "line": 46,
+      "symbol": "ThemeDeclaration.titleFont",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeConfig.swift",
+      "line": 48,
+      "symbol": "ThemeDeclaration.barStyle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeConfig.swift",
+      "line": 50,
+      "symbol": "ThemeDeclaration.prefersLargeTitles",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeConfig.swift",
+      "line": 52,
+      "symbol": "ThemeDeclaration.setupProperties()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeConfig.swift",
+      "line": 54,
+      "symbol": "ThemeDeclaration.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeableViews.swift",
+      "line": 34,
+      "symbol": "ThemeableView.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeableViews.swift",
+      "line": 38,
+      "symbol": "ThemeableView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeableViews.swift",
+      "line": 42,
+      "symbol": "ThemeableView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeableViews.swift",
+      "line": 54,
+      "symbol": "ThemeableButton",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeableViews.swift",
+      "line": 77,
+      "symbol": "ThemeableButton.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeableViews.swift",
+      "line": 81,
+      "symbol": "ThemeableButton.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeableViews.swift",
+      "line": 85,
+      "symbol": "ThemeableButton.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeableViews.swift",
+      "line": 98,
+      "symbol": "ThemeableNavigationBar",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeableViews.swift",
+      "line": 135,
+      "symbol": "ThemeableNavigationBar.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeableViews.swift",
+      "line": 139,
+      "symbol": "ThemeableNavigationBar.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeableViews.swift",
+      "line": 143,
+      "symbol": "ThemeableNavigationBar.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeableViews.swift",
+      "line": 154,
+      "symbol": "ThemeableTabBar",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeableViews.swift",
+      "line": 178,
+      "symbol": "ThemeableTabBar.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeableViews.swift",
+      "line": 182,
+      "symbol": "ThemeableTabBar.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeableViews.swift",
+      "line": 186,
+      "symbol": "ThemeableTabBar.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeableViews.swift",
+      "line": 198,
+      "symbol": "ThemeableLabel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeableViews.swift",
+      "line": 222,
+      "symbol": "ThemeableLabel.init()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeableViews.swift",
+      "line": 226,
+      "symbol": "ThemeableLabel.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/williamtaylor/Documents/Code/EasyThemer/EasyThemer/Classes/ThemeableViews.swift",
+      "line": 230,
+      "symbol": "ThemeableLabel.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/williamtaylor/Documents/Code/EasyThemer"
+}

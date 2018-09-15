@@ -6,6 +6,11 @@
 //  Copyright (c) 2018 William Taylor. All rights reserved.
 //
 
+/**
+ The base theme protocol
+ 
+ All themes must conform to this protocol
+ */
 public protocol Theme {
     //Standard Colors
     var backgroundColor: UIColor? { get }
@@ -21,7 +26,10 @@ public protocol Theme {
     var prefersLargeTitles: Bool? { get }
 }
 
-open class ThemeDecleration: Theme {
+/**
+ This class can be overriden for a more convenient way to declare a theme
+ */
+open class ThemeDeclaration: Theme {
     
     public var barTintColor: UIColor?
 

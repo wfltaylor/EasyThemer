@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EasyThemer'
-  s.version          = '1.0.3'
+  s.version          = '1.1.3'
   s.summary          = 'An easy way to add themes to your iOS app, using Swift'
 
 # This description is used to generate tags and improve search results.

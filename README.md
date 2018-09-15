@@ -41,7 +41,7 @@ Themes can be declared by overriding ```ThemeDecleration```. This is the reccome
 ##### Example
 
 ```swift
-class LightTheme: ThemeDecleration {
+class LightTheme: ThemeDeclaration {
     override func setupProperties() {
         titleFont = UIFont(name: "Gill Sans", size: 44)
         primaryFont = UIFont(name: "Gill Sans", size: 12)
@@ -55,7 +55,7 @@ You can also declare a theme by conforming to the ```Theme``` protocol but the T
 
 You can also add custom properties to your theme like this:
 ```swift
-class LightTheme: ThemeDecleration {
+class LightTheme: ThemeDeclaration {
     var seperatorColor: UIColor
     override func setupProperties() {
         titleFont = UIFont(name: "Gill Sans", size: 44)
@@ -159,7 +159,7 @@ extension MyViewController: ThemeEngineDelegate {
         tableView.backgroundColor = theme.backgroundColor
     }
     func setupThemes() {
-        ThemeEngine.standard.clients.append(self)
+        ThemeEngine.standard.register(self)
     }
     
 }

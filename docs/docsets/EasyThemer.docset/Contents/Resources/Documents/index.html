@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>EasyThemer  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+
+
+    <a title="EasyThemer  Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="index.html">
+          EasyThemer Docs
+        </a>
+         (48% documented)
+      </p>
+    
+      <p class="header-col--secondary">
+        <form role="search" action="search.json">
+          <input type="text" placeholder="Search documentation" data-typeahead>
+        </form>
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="index.html">EasyThemer Reference</a>
+      <img class="carat" src="img/carat.png" />
+      EasyThemer  Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ThemeDeclaration.html">ThemeDeclaration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ThemeEngine.html">ThemeEngine</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ThemeableButton.html">ThemeableButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ThemeableLabel.html">ThemeableLabel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ThemeableNavigationBar.html">ThemeableNavigationBar</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ThemeableTabBar.html">ThemeableTabBar</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/ThemeableView.html">ThemeableView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/UIBarStyle.html">UIBarStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/UIColor.html">UIColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/UIFont.html">UIFont</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/Theme.html">Theme</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/ThemeEngineDelegate.html">ThemeEngineDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/JSONTheme.html">JSONTheme</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            
+            <p><img src="https://raw.githubusercontent.com/wfltaylor/EasyThemer/master/easythemer.png" alt="EasyThemer"></p>
+
+<p><a href="https://cocoapods.org/pods/EasyThemer"><img src="https://img.shields.io/cocoapods/v/EasyThemer.svg?style=flat" alt="Version"></a>
+<a href="https://cocoapods.org/pods/EasyThemer"><img src="https://img.shields.io/cocoapods/l/EasyThemer.svg?style=flat" alt="License"></a>
+<a href="https://cocoapods.org/pods/EasyThemer"><img src="https://img.shields.io/cocoapods/p/EasyThemer.svg?style=flat" alt="Platform"></a></p>
+<h2 id='features' class='heading'>Features</h2>
+
+<ul>
+<li>[x] Prebuilt UIKit controls with automatic theming</li>
+<li>[x] Themes can be JSON or a struct</li>
+<li>[x] Quick and easy to implement</li>
+<li>[x] Flexable and straightforward to extend</li>
+</ul>
+<h2 id='example' class='heading'>Example</h2>
+
+<p>To run the example project, clone the repo, and run <code>pod install</code> from the Example directory first.</p>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<p>iOS 8 and Swift 4</p>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>EasyThemer is available through <a href="https://cocoapods.org">CocoaPods</a>. To install
+it, simply add the following line to your Podfile:</p>
+<pre class="highlight ruby"><code><span class="n">pod</span> <span class="s1">'EasyThemer'</span>
+</code></pre>
+<h2 id='usage' class='heading'>Usage</h2>
+<h3 id='declaring-theme' class='heading'>Declaring Theme</h3>
+
+<p>There are two ways to declare a theme.</p>
+<h4 id='code-method' class='heading'>Code Method</h4>
+
+<p>Themes can be declared by overriding <code>ThemeDecleration</code>. This is the reccomended method for most uses.</p>
+<h5 id='example' class='heading'>Example</h5>
+<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">LightTheme</span><span class="p">:</span> <span class="kt">ThemeDecleration</span> <span class="p">{</span>
+    <span class="k">override</span> <span class="kd">func</span> <span class="nf">setupProperties</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">titleFont</span> <span class="o">=</span> <span class="kt">UIFont</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"Gill Sans"</span><span class="p">,</span> <span class="nv">size</span><span class="p">:</span> <span class="mi">44</span><span class="p">)</span>
+        <span class="n">primaryFont</span> <span class="o">=</span> <span class="kt">UIFont</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"Gill Sans"</span><span class="p">,</span> <span class="nv">size</span><span class="p">:</span> <span class="mi">12</span><span class="p">)</span>
+        <span class="n">backgroundColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">white</span>
+        <span class="n">prefersLargeTitles</span> <span class="o">=</span> <span class="kc">true</span>
+        <span class="n">barStyle</span> <span class="o">=</span> <span class="kt">UIBarStyle</span><span class="o">.</span><span class="k">default</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+<p>You can also declare a theme by conforming to the <code><a href="Protocols/Theme.html">Theme</a></code> protocol but the ThemeDecleration method is recomended due to the greater level of clarity.</p>
+
+<p>You can also add custom properties to your theme like this:</p>
+<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">LightTheme</span><span class="p">:</span> <span class="kt">ThemeDecleration</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">seperatorColor</span><span class="p">:</span> <span class="kt">UIColor</span>
+    <span class="k">override</span> <span class="kd">func</span> <span class="nf">setupProperties</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">titleFont</span> <span class="o">=</span> <span class="kt">UIFont</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"Gill Sans"</span><span class="p">,</span> <span class="nv">size</span><span class="p">:</span> <span class="mi">44</span><span class="p">)</span>
+        <span class="n">primaryFont</span> <span class="o">=</span> <span class="kt">UIFont</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="s">"Gill Sans"</span><span class="p">,</span> <span class="nv">size</span><span class="p">:</span> <span class="mi">12</span><span class="p">)</span>
+        <span class="n">backgroundColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">white</span>
+        <span class="n">prefersLargeTitles</span> <span class="o">=</span> <span class="kc">true</span>
+        <span class="n">barStyle</span> <span class="o">=</span> <span class="kt">UIBarStyle</span><span class="o">.</span><span class="k">default</span>
+        <span class="n">seperatorColor</span> <span class="o">=</span> <span class="kt">UIColor</span><span class="o">.</span><span class="n">gray</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h4 id='json-method' class='heading'>JSON Method</h4>
+
+<p>Themes can be declared by using a JSON file. This isn&rsquo;t reccomended for local use but can be good for downloading themes from a server.</p>
+<h5 id='example' class='heading'>Example</h5>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"backgroundColorCode"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"red"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"alpha"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"blue"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"green"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"barStyle"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"default"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"primaryFontCode"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"name"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Chalkboard SE"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"pointSize"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"barTintColorCode"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"red"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"alpha"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"blue"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"green"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mf">0.6</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"titleFontCode"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"name"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"Chalkboard SE"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"pointSize"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">54</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"textColorCode"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"red"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"alpha"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"blue"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"green"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="s2">"prefersLargeTitles"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"tintColorCode"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"red"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"alpha"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"blue"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"green"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+
+<p>If this was a file in the bundle, and called <code>CrazyTheme.json</code> you could initialize using <code>JSONTheme(named: &quot;CrazyTheme&quot;)</code></p>
+<h3 id='using-themeengine' class='heading'>Using ThemeEngine</h3>
+<h4 id='configuring' class='heading'>Configuring</h4>
+
+<p>To configure the ThemeEngine singleton you can put <code>ThemeEngine.standard.configure(theme: LightTheme())</code> in your <q>did finish launching with options</q>. You must provide a default theme.</p>
+<h4 id='setting-theme' class='heading'>Setting Theme</h4>
+<pre class="highlight swift"><code><span class="kt">ThemeEngine</span><span class="o">.</span><span class="n">standard</span><span class="o">.</span><span class="nf">setTheme</span><span class="p">(</span><span class="nv">theme</span><span class="p">:</span> <span class="kt">LightTheme</span><span class="p">())</span>
+</code></pre>
+<h4 id='getting-current-theme' class='heading'>Getting Current Theme</h4>
+<pre class="highlight swift"><code><span class="kt">ThemeEngine</span><span class="o">.</span><span class="n">standard</span><span class="o">.</span><span class="n">currentTheme</span><span class="o">!</span>
+</code></pre>
+<h3 id='using-premade-uikit-components' class='heading'>Using Premade UIKit Components</h3>
+
+<p>The library includes some premade UIKit components including <code><a href="Classes/ThemeableNavigationBar.html">ThemeableNavigationBar</a></code>, <code><a href="Classes/ThemeableTabBar.html">ThemeableTabBar</a></code>, <code><a href="Classes/ThemeableLabel.html">ThemeableLabel</a></code>, <code><a href="Classes/ThemeableButton.html">ThemeableButton</a></code>, and <code><a href="Classes/ThemeableView.html">ThemeableView</a></code>.</p>
+
+<p>These are design mostly for convenience whilst using Interface Builder and make assumptions about what you want applied to what part of the control.</p>
+
+<p>To use, simply set the views Custom Class to one of the avaliable subclasses. These are automatically setup and will change themes with the standard ThemeEngine singleton.</p>
+<h3 id='using-themeenginedelegate' class='heading'>Using ThemeEngineDelegate</h3>
+
+<p>The reccomended way to impliment custom theming is by using the <code><a href="Protocols/ThemeEngineDelegate.html">ThemeEngineDelegate</a></code>.</p>
+<h4 id='example' class='heading'>Example</h4>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">MyViewController</span><span class="p">:</span> <span class="kt">ThemeEngineDelegate</span> <span class="p">{</span>
+
+    <span class="kd">func</span> <span class="nf">themeChanged</span><span class="p">(</span><span class="nv">theme</span><span class="p">:</span> <span class="kt">Theme</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">setTheme</span><span class="p">(</span><span class="nv">theme</span><span class="p">:</span> <span class="n">theme</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="kd">func</span> <span class="nf">themeReady</span><span class="p">(</span><span class="nv">theme</span><span class="p">:</span> <span class="kt">Theme</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nf">setTheme</span><span class="p">(</span><span class="nv">theme</span><span class="p">:</span> <span class="n">theme</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">setTheme</span><span class="p">(</span><span class="nv">theme</span><span class="p">:</span> <span class="kt">Theme</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">tableView</span><span class="o">.</span><span class="n">backgroundColor</span> <span class="o">=</span> <span class="n">theme</span><span class="o">.</span><span class="n">backgroundColor</span>
+    <span class="p">}</span>
+    <span class="kd">func</span> <span class="nf">setupThemes</span><span class="p">()</span> <span class="p">{</span>
+        <span class="kt">ThemeEngine</span><span class="o">.</span><span class="n">standard</span><span class="o">.</span><span class="n">clients</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="k">self</span><span class="p">)</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</code></pre>
+
+<p>In this example, <code>setupThemes()</code> is called in the viewDidLoad. It is important to not immediately set the theme in <code>viewDidLoad()</code> or when initalizing because the ThemeEngine may not be configured yet - <q>did finish launching with options</q> is called after the Storyboard is loaded.</p>
+<h2 id='author' class='heading'>Author</h2>
+
+<p>William Taylor</p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>EasyThemer is available under the MIT license. See the LICENSE file for more info.</p>
+
+          </div>
+        </section>
+
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2018 <a class="link" href="https://github.com/wfltaylor/EasyThemer" target="_blank" rel="external">William Taylor</a>. All rights reserved. (Last updated: 2018-09-15)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

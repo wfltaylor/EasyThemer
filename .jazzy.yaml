@@ -1,0 +1,3 @@
+xcodebuild_arguments:
+    - '-project'
+    - 'Example/Pods/Pods.xcodeproj'

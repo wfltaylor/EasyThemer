@@ -9,7 +9,7 @@
 import Foundation
 import EasyThemer
 
-class LightTheme: ThemeDecleration {
+class LightTheme: ThemeDeclaration {
     override func setupProperties() {
         titleFont = UIFont(name: "Gill Sans", size: 44)
         primaryFont = UIFont(name: "Gill Sans", size: 12)
@@ -18,7 +18,7 @@ class LightTheme: ThemeDecleration {
         barStyle = UIBarStyle.default
     }
 }
-class DarkTheme: ThemeDecleration {
+class DarkTheme: ThemeDeclaration {
     override func setupProperties() {
         titleFont = UIFont.systemFont(ofSize: 44)
         primaryFont = UIFont.systemFont(ofSize: UIFont.systemFontSize)
