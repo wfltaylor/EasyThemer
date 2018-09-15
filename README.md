@@ -28,6 +28,10 @@ it, simply add the following line to your Podfile:
 pod 'EasyThemer'
 ```
 
+## Docs
+
+https://wfltaylor.github.io/EasyThemer/
+
 ## Usage
 
 ### Declaring Theme
