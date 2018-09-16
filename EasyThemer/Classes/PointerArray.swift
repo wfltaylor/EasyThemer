@@ -40,7 +40,6 @@ class PointerArray<Type>: Sequence {
      
      */
     func append(_ object: Type) {
-        value.compact()
         let strongObject = object as AnyObject
         let pointer = Unmanaged.passUnretained(strongObject).toOpaque()
         value.addPointer(pointer)
@@ -58,7 +57,6 @@ class PointerArray<Type>: Sequence {
      
      */
     func object(at index: Int) -> Type? {
-        value.compact()
         guard index < value.count, let pointer = value.pointer(at: index) else { return nil }
         return Unmanaged<AnyObject>.fromOpaque(pointer).takeUnretainedValue() as? Type
     }
@@ -72,7 +70,6 @@ class PointerArray<Type>: Sequence {
      
      */
     func replace(at index: Int, withObject object: Type?) {
-        value.compact()
         guard index < value.count else { return }
         let strongObject = object as AnyObject
         let pointer = Unmanaged.passUnretained(strongObject).toOpaque()
@@ -86,7 +83,6 @@ class PointerArray<Type>: Sequence {
      
      */
     func makeIterator() -> PointerArray<Type>.Iterator<Type> {
-        value.compact()
         return PointerArrayIterator(value: self)
     }
     
@@ -95,22 +91,28 @@ class PointerArray<Type>: Sequence {
      */
     var last: Type? {
         get {
-            value.compact()
             return object(at: value.count-1)
         }
         set {
-            value.compact()
             replace(at: value.count-1, withObject: newValue)
         }
     }
+    
+    /**
+     The number of elements in the array
+     */
+    var count: Int {
+        get {
+            return value.count
+        }
+    }
+    
     subscript(index: Int) -> Type? {
         get {
-            value.compact()
             return object(at: index)
         }
         
         set (value) {
-            self.value.compact()
             replace(at: index, withObject: value)
         }
     }
@@ -144,6 +146,14 @@ class PointerArrayIterator<Type>: IteratorProtocol {
     func next() -> PointerArrayIterator.Element? {
         defer {
             currentIndex += 1
+        }
+        if pointerArray[currentIndex] == nil && currentIndex < pointerArray.count {
+            while pointerArray[currentIndex] == nil {
+                if currentIndex >= pointerArray.count {
+                    return nil
+                }
+                currentIndex += 1
+            }
         }
         return pointerArray[currentIndex]
     }
