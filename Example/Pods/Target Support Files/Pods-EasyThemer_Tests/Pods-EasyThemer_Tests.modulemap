@@ -1,0 +1,6 @@
+framework module Pods_EasyThemer_Tests {
+  umbrella header "Pods-EasyThemer_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

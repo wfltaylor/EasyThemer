@@ -1,0 +1,6 @@
+framework module EasyThemer {
+  umbrella header "EasyThemer-umbrella.h"
+
+  export *
+  module * { export * }
+}

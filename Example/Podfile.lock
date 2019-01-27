@@ -1,0 +1,16 @@
+PODS:
+  - EasyThemer (0.1.0)
+
+DEPENDENCIES:
+  - EasyThemer (from `../`)
+
+EXTERNAL SOURCES:
+  EasyThemer:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EasyThemer: b522cdcac757ca7df0462b95f1a0cb050e9c8a7b
+
+PODFILE CHECKSUM: fea720f8467cb876877ff6dfd08f5794df611ebc
+
+COCOAPODS: 1.5.0
