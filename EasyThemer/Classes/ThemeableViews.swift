@@ -5,6 +5,8 @@
 //  Created by William Taylor on 25/8/18.
 //
 
+import UIKit
+
 /**
  A basic themeable UIView
  */

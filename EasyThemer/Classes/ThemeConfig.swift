@@ -6,6 +6,8 @@
 //  Copyright (c) 2018 William Taylor. All rights reserved.
 //
 
+import UIKit
+
 /**
  The base theme protocol
  
